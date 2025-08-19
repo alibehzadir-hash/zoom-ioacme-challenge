@@ -1,0 +1,37 @@
+<script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^1.4.0"
+    }
+  }
+</script>
+<h1>Infinite Zoom Storyboard</h1>
+<p>Enter your full narrative below, with each scene as a separate paragraph.</p>
+<textarea id="narrative-input" placeholder="Enter your full story here...">The journey begins with a sweeping, majestic view of a **gigantic black hole**, its fiery orange accretion disk swirling with cosmic fury, a distant planet barely visible. A sleek, advanced spaceship, the *Odyssey*, glides silently past its event horizon, a solitary sentinel against the stellar backdrop. Our perspective narrows, drawn inexorably towards its heart, not by gravity's pull, but a beacon of light.
+
+As we zoom closer, the immense blackness dissolves not into nothingness, but a blinding, **shimmering azure vortex – a dimensional gateway**. The *Odyssey* is now perfectly centered, plunging headfirst into this luminous portal. The light engulfs us, and the blue tunnel elongates, becoming a dazzling, rhythmic conduit of pure energy. We hurtle through this **cybernetic wormhole**, its walls pulsating with data streams and unseen forces, the ship still spearheading the passage, now accompanied by another, smaller craft.
+
+The cerulean light shifts, bleeding from blue to a furious, vibrant **amber**. The tunnel transforms, its geometric patterns becoming intricate, golden circuits, humming with a primal energy. Still, the *Odyssey* leads, its form outlined against the brilliant, searing light at the tunnel's end.
+
+With an explosive burst, we emerge not into deep space, but a new, vibrant cosmic vista. A **smaller, intensely orange black hole** dominates this scene, its rings ablaze with captured starlight, orbited by silent, shadowed moons. The *Odyssey* and its companion now hover, bathed in the singularity's glow, poised on the edge of the unknown.
+
+Our trajectory shifts, drawn by the faint, but persistent, glow of a distant world. We accelerate, zooming past the black hole and the ships, until the planet resolves into a breathtaking **futuristic metropolis** bathed in the warm light of a rising sun. Towering skyscrapers pierce the cloud-dusted sky, their gleaming surfaces reflecting the dawn. Rivers of light pulse through the city's arteries, a testament to civilization's enduring spirit.
+
+As we descend deeper into the city's heart, we pinpoint a specific **cluster of buildings**, a central nexus of power and light. The camera plunges towards it, zooming past the individual structures until a colossal, **radiant red-orange ring** materializes from within the cityscape itself – a new portal, built by intelligent hands. It pulsates with an electric hum, drawing us in.
+
+We plunge into the crimson ring, vibrant and electric, only to find ourselves immediately within a familiar, yet transformed, space. The **blue-hued cybernetic tunnel** reappears, but now it's subtly different, more intricate, a fractal echo of the previous passage. The *Odyssey* is here again, leading the charge, but perhaps it's a different ship, or a different moment.
+
+Faster and faster, through warped space and time, until the colors dissipate, and we emerge. Not into a city, not into a wormhole, but back to the beginning – a **vast, cosmic canvas dominated by the immense, swirling black hole** and the majestic *Odyssey* traversing its edge. The cycle restarts, the journey infinite, each emergence a new beginning, each descent an eternal exploration of the universe's boundless wonders.</textarea>
+<p>Provide an optional conditioning image for the first scene.</p>
+<input id="file-input" type="file" accept="image/*" />
+<button id="create-storyboard-button">Create Storyboard</button>
+
+<div id="storyboard-container"></div>
+
+<div id="quota-error">
+  <p>Veo is available with limited free generations per day for testing.</p>
+  <p>You exceeded your current quota, to continue please use your paid API key.</p>
+  <p><button id="open-key">Click here to add your API key.</button></p>
+</div>
+
+<p id="status"></p>
